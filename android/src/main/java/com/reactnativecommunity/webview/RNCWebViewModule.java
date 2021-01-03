@@ -397,7 +397,7 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
     Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
     intent.addCategory(Intent.CATEGORY_OPENABLE);
     intent.setType(MimeType.DEFAULT.value);
-    intent.putExtra(Intent.EXTRA_MIME_TYPES, getAcceptedMimeType(acceptTypes));
+    //intent.putExtra(Intent.EXTRA_MIME_TYPES, getAcceptedMimeType(acceptTypes));
     intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, allowMultiple);
     return intent;
   }
